@@ -8,17 +8,17 @@
 <title>고객 리스트 화면</title>
 </head>
 <body>
-<h1>고객 리스트 화면</h1>
+<h1>고객1 리스트 화면</h1>
 <c:if test="${editedCustomer != null}">
-이하 고객 정보가 변경되었습니다
+이하 고객1 정보가 변경되었습니다
 <dl>
-  <dt>이름</dt>
+  <dt>이름1</dt>
   <dd><c:out value="${editedCustomer.name}"/></dd>
-  <dt>메일</dt>
+  <dt>메일1</dt>
   <dd><c:out value="${editedCustomer.emailAddress}"/></dd>
-  <dt>생년월일</dt>
+  <dt>생년월일1</dt>
   <dd><fmt:formatDate pattern="yyyy/MM/dd" value="${editedCustomer.birthday}"/></dd>
-  <dt>좋아하는 숫자</dt>
+  <dt>좋아하는 숫자1</dt>
   <dd><c:out value="${editedCustomer.favoriteNumber}"/></dd>
 </dl>
 </c:if>
